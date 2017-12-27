@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="com.ksyun.ks3:ks3androidsdk-1.4.1">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/67116765241d4c0774dbfefb666f57e71619ac1e/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/67116765241d4c0774dbfefb666f57e71619ac1e/output/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/67116765241d4c0774dbfefb666f57e71619ac1e/output/jars/libs/android-async-http-1.4.6.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/67116765241d4c0774dbfefb666f57e71619ac1e/output/jars/libs/org.apache.http.legacy.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ksyun.ks3/ks3androidsdk/1.4.1/6d4e8f9bd2f5a03d6c1331e2db0dbb567a2d347a/ks3androidsdk-1.4.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

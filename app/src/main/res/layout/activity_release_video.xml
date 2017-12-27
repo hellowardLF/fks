@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_top"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/user_bg"/>
+        <RelativeLayout
+            android:id="@+id/relase_relativelayout"
+            android:layout_marginTop="-30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/img_top"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp">
+            <ImageView
+                android:src="@drawable/user_bg"
+                android:id="@+id/relase_avatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+            <TextView
+                android:layout_marginTop="3dp"
+                android:textColor="#ffffff"
+                android:text="656565656565"
+                android:id="@+id/relase_name"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/relase_avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_toRightOf="@+id/relase_name"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/userinfo_female"
+                android:id="@+id/relase_age"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:text="作品(10)"
+                android:textColor="#000000"
+                android:id="@+id/relase_guanzhu"
+                android:layout_marginBottom="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/relase_avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="#000000"
+                android:id="@+id/relase_lin"
+                android:layout_marginBottom="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
+                android:text="|"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/relase_guanzhu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="关注(10)"
+                android:textColor="#000000"
+                android:id="@+id/relase_fans"
+                android:layout_marginBottom="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/relase_lin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/img_error"
+            android:layout_below="@+id/relase_relativelayout"
+            android:background="@color/white"
+            android:src="@drawable/bottom_large"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"/>
+        <android.support.design.widget.TabLayout
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/relase_relativelayout"
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:tabIndicatorColor="@color/colorTheme"
+            app:tabIndicatorHeight="2.6dp"
+            app:tabMode="fixed"
+            app:tabPadding="2dp"
+            app:tabSelectedTextColor="@color/colorTheme"
+            app:tabTextAppearance="@style/tabTextAppearance"
+            app:tabTextColor="@color/grey" />
+        <android.support.v7.widget.RecyclerView
+            android:background="#f5f5f5"
+            android:layout_width="match_parent"
+            android:id="@+id/rv"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tabLayout"/>
+       <Button
+           android:layout_below="@id/img_error"
+           android:id="@+id/btn_push"
+           android:layout_marginBottom="@dimen/dp_20"
+           android:layout_marginRight="@dimen/dp_20"
+           android:layout_marginLeft="@dimen/dp_20"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="拍      摄"
+           android:textColor="@color/white"
+           android:background="@drawable/btn_paishe_shape"/>
+    </RelativeLayout>
+</ScrollView>
+
+</LinearLayout>

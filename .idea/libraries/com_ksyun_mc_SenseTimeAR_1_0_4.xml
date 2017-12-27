@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.ksyun.mc:SenseTimeAR-1.0.4">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/d296c9f07a76857faf157555c22aa45d9b9dfca2/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/d296c9f07a76857faf157555c22aa45d9b9dfca2/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ksyun.mc/SenseTimeAR/1.0.4/c33fdb43b7fc8cd0f5980f1cd44f5d70a12353dc/SenseTimeAR-1.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

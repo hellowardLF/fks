@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="com.ksyun.media:libksysv-java-1.5.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/6d4a1577e0f58c7f7575c15ca75f6192a74ae8e6/output/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/6d4a1577e0f58c7f7575c15ca75f6192a74ae8e6/output/jars/libs/ksylive.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/6d4a1577e0f58c7f7575c15ca75f6192a74ae8e6/output/jars/libs/libksyplayer.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/6d4a1577e0f58c7f7575c15ca75f6192a74ae8e6/output/jars/libs/libksystat.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/6d4a1577e0f58c7f7575c15ca75f6192a74ae8e6/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/6d4a1577e0f58c7f7575c15ca75f6192a74ae8e6/output/jars/libs/libksysv.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

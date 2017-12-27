@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.smart.androidui:androidui-1.1.2">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/7e877f03af61070fc26f9aa2913c42cd1075414b/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/7e877f03af61070fc26f9aa2913c42cd1075414b/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.smart.androidui/androidui/1.1.2/989c163764b67f60ec4cfdddf56c5ffdd20c4a3/androidui-1.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

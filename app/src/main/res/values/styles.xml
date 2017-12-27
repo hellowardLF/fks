@@ -1,0 +1,126 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="alertDialogTheme">@style/shareDialog</item>-->
+    </style>
+
+    <style name="SplashTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="tabTextAppearance">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- 常规对话框样式 -->
+    <style name="commondialogstyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground"> @android:color/transparent </item>
+    </style>
+    <style name="shareDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="mystyle" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>  //进入时的动画
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>    //退出时的动画
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="SF_dialogCustom" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="SF_pressDialogCustom" parent="@style/SF_dialogCustom">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Animation.Toast" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/toast_enter</item>
+        <item name="android:windowExitAnimation">@anim/toast_exit</item>
+    </style>
+    <style name="MyAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
+    <style name="dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+<style name="Theme.NoTitleBar" parent="@android:style/Theme.NoTitleBar" />
+
+
+<style name="DefaultAnimation" parent="@android:style/Animation.Activity">
+    <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+    <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+    <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+    <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+</style>
+
+<style name="RiseAnimation" parent="@android:style/Animation.Activity">
+    <item name="android:activityOpenEnterAnimation">@anim/slide_in_bottom</item>
+    <item name="android:activityOpenExitAnimation">@anim/slide_stand</item>
+    <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+    <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+</style>
+
+<style name="Theme.RiseAnimation" parent="@style/AppTheme">
+    <item name="android:windowAnimationStyle">@style/RiseAnimation</item>
+</style>
+
+<style name="ThemeWithTitle" parent="@android:style/Theme.DeviceDefault.Light">
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowAnimationStyle">@style/DefaultAnimation</item>
+</style>
+
+<style name="dialog" parent="@android:style/Theme.Dialog">
+    <item name="android:windowFrame">@null</item><!--边框-->
+    <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+    <item name="android:windowIsTranslucent">false</item><!--半透明-->
+    <item name="android:windowNoTitle">true</item><!--无标题-->
+    <item name="android:windowBackground">@color/transparent</item><!--背景透明-->
+    <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+</style>
+
+<style name="MyEditText" parent="Theme.AppCompat.Light">
+    <item name="colorControlNormal">@android:color/darker_gray</item>
+    <item name="colorControlActivated">@android:color/holo_orange_dark</item>
+</style>
+
+<style name="TransCodeDialog" parent="@android:style/Theme.Dialog">
+    <item name="android:windowFrame">@null</item><!--边框-->
+    <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+    <item name="android:windowIsTranslucent">false</item><!--半透明-->
+    <item name="android:windowNoTitle">true</item><!--无标题-->
+    <item name="android:windowBackground">@color/full_black</item><!--背景透明-->
+    <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+</style>
+
+</resources>

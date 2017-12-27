@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/skip"
+        android:onClick="onSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:text="跳过"/>
+    <TextView
+        android:layout_below="@+id/skip"
+        android:onClick="onSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorGray"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:text="你最感兴趣的"
+        android:id="@+id/textView"/>
+    <!--<tv.qishi.milian.view.MyPathView-->
+        <!--android:id="@+id/mpv"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:background="@drawable/shape_circle_sel"/>-->
+    <ImageView
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/live"
+        android:id="@+id/img_live"/>
+
+    <ImageView
+        android:id="@+id/img_meirong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/img_live"
+        android:layout_alignStart="@+id/textView"
+        android:src="@drawable/meirong"/>
+
+    <ImageView
+        android:id="@+id/img_chuyi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="15dp"
+        android:layout_toStartOf="@+id/img_live"
+        android:src="@drawable/chuyi"/>
+
+    <ImageView
+        android:id="@+id/img_gaoxiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/img_live"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/img_meirong"
+        android:src="@drawable/gaoxiao"/>
+
+    <ImageView
+        android:id="@+id/img_jianshen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_chuyi"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="3dp"
+        android:layout_toEndOf="@+id/img_gaoxiao"
+        android:src="@drawable/jiansheng"/>
+
+    <ImageView
+        android:id="@+id/img_jiepai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_chuyi"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/img_gaoxiao"
+        android:src="@drawable/jiepai"/>
+    <Button
+        android:onClick="onComplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:background="@color/colorTheme"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:text="完    成"/>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.shuyu:gsyvideoplayer-androidvideocache-2.1.1">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/ba4c190aee95271e8e66a9cf0cbb0318981ffe2e/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/ba4c190aee95271e8e66a9cf0cbb0318981ffe2e/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.shuyu/gsyvideoplayer-androidvideocache/2.1.1/6869b4a8034129e9a581714594c89988e03babd/gsyvideoplayer-androidvideocache-2.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

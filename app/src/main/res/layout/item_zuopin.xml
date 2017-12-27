@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/dp_10"
+    android:layout_marginTop="5dp"
+    android:layout_height="100dp"
+    android:background="@color/white"
+
+    >
+
+
+    <ImageView
+        android:id="@+id/zuoping_img"
+        android:layout_alignParentRight="true"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:src="@drawable/user_bg" />
+    <TextView
+        android:id="@+id/zuoping_videotime"
+        android:textColor="#ffffff"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_toLeftOf="@+id/zuoping_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/zuoping_title"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/zuoping_name"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#909090" />
+
+            <TextView
+                android:id="@+id/zuoping_comment"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="#909090" />
+
+            <TextView
+                android:id="@+id/zuoping_creattime"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="#909090" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <!--<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:src="@drawable/item_test"/>-->
+</RelativeLayout>

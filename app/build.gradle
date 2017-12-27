@@ -1,0 +1,122 @@
+apply plugin: 'com.android.application'
+apply plugin: 'bugly'
+bugly {
+    appId = '1ada2b4c05'
+    appKey = 'c877d311-6bd9-429f-8a93-2bea743a2372'
+}
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.3'
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    defaultConfig {
+        applicationId "com.ggzb"
+        minSdkVersion 19
+        targetSdkVersion 22
+        versionCode 3
+        versionName "2.1.6"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+        aaptOptions.cruncherEnabled = false
+        aaptOptions.useNewCruncher = false
+        aaptOptions.cruncherEnabled = false
+        aaptOptions.useNewCruncher = false
+    }
+    signingConfigs {
+        debug {
+            keyAlias 'kuaishou'
+            keyPassword 'kuaishou1234'
+            storeFile file('E:/work/kuaishou/keystore/kuaishou1.jks')
+            storePassword 'kuaishou1234'
+        }
+        release {
+            keyAlias 'kuaishou'
+            keyPassword 'kuaishou1234'
+            storeFile file('E:/work/kuaishou/keystore/kuaishou1.jks')
+            storePassword 'kuaishou1234'
+        }
+    }
+    buildTypes {
+        debug {
+            // 显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            //混淆
+            minifyEnabled false
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources false
+            //加载默认混淆配置文件
+            //proguardFiles getDefaultProguardFile('proguard-Android.txt'), 'proguard-rules.pro'
+            //签名
+            signingConfig signingConfigs.debug
+        }
+        release {
+            debuggable true
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            //混淆
+            minifyEnabled false
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件?
+            shrinkResources false
+            //加载默认混淆配置文件
+//            proguardFiles getDefaultProguardFile('proguard-Android.txt'), 'proguard-rules.pro'
+            //签名
+            signingConfig signingConfigs.release
+        }
+    }
+}
+repositories {
+    jcenter()
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.alibaba:fastjson:1.2.40'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:+'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.smart.androidutils:androidutils:1.0.3'
+    compile 'com.smart.androidui:androidui:1.1.2'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //    compile 'com.loopj.android:android-async-http:1.4.9'
+    //compile 'com.qiniu:happy-dns:0.2.5'
+    compile 'com.github.stuxuhai:jpinyin:1.0'
+    //compile project(':ijkwidget')
+    compile project(':androidHorizontalListView')
+    //compile project (':thirdpay')
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.google.firebase:firebase-appindexing:11.0.4'
+    compile 'com.tencent.bugly:crashreport:latest.release'
+    compile 'com.tencent.bugly:nativecrashreport:latest.release'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.isseiaoki:simplecropview:1.1.4'
+    //    video player
+    compile 'com.shuyu:gsyVideoPlayer-java:2.1.1'
+    compile 'com.shuyu:gsyVideoPlayer-ex_so:2.1.1'
+    compile 'com.ksyun.media:libksysv-java:1.5.3'
+    compile 'com.ksyun.media:libksysv-arm64:1.5.3'
+    compile 'com.ksyun.media:libksysv-armv7a:1.5.3'
+    compile 'com.ksyun.media:libksysv-x86:1.5.3'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.ksyun.ks3:ks3androidsdk:1.4.1'
+    compile 'com.lht:paintview:1.17'
+    //录制魔方动态贴纸依赖库，若不使用，可以不依赖
+    compile 'com.ksyun.mc:libkmcfilter_sensetime:1.0.5'
+    compile 'com.ksyun.mc:SenseTimeAR:1.0.4'
+    //动态贴纸依赖库，若不使用，使用provided
+    compile 'com.facebook.fresco:fresco:1.4.0'
+    compile 'com.facebook.fresco:animated-gif:1.4.0'
+    compile 'com.facebook.fresco:animated-webp:1.4.0'
+    compile 'pub.devrel:easypermissions:0.4.2'
+    compile files('libs/share_qq.jar')
+    compile files('libs/share_wechat.jar')
+    compile files('libs/weiboSDKCore_3.1.4.jar')
+}
